@@ -62,9 +62,10 @@
     }
   </style>
   <script>
-    const referrer = document.referrer;
-    if (referrer) {
-      document.getElementById("source").textContent = new URL(referrer).hostname;
+    const urlParams = new URLSearchParams(window.location.search);
+    const from = urlParams.get('from');
+    if (from) {
+      document.getElementById("source").textContent = from;
     } else {
       document.getElementById("source").textContent = "Unknown";
     }
