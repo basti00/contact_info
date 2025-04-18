@@ -61,6 +61,14 @@
       }
     }
   </style>
+
+</head>
+<body>
+  <div class="container">
+    <h1>Hi, the domain <span id="source"> is for sale</h1>
+    <p>If you're interested, please contact:</p>
+    <p><a href="mailto:uhl.sebastian@example.com">basti00.contact@gmail.com</a></p>
+  </div>
   <script>
     const urlParams = new URLSearchParams(window.location.search);
     const from = urlParams.get('from');
@@ -70,12 +78,5 @@
       document.getElementById("source").textContent = "Unknown";
     }
   </script>
-</head>
-<body>
-  <div class="container">
-    <h1>Hi, the domain <span id="source"> is for sale</h1>
-    <p>If you're interested, please contact:</p>
-    <p><a href="mailto:uhl.sebastian@example.com">basti00.contact@gmail.com</a></p>
-  </div>
 </body>
 </html>
